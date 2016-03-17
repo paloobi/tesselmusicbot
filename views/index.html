@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+  body {
+    background: 
+      linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+      linear-gradient(45deg, #ECEDDC 25%, transparent 25%); 
+    background-size: 100px 100px;
+    background-color: #EC173A;
+  }
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;  
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
+<h1>Say hello to our Tessel, and we'll pick a song for you!</h1>
+
+<a href="/music"><button>Listen to My Song</button></a>
+
+{% endblock %}
